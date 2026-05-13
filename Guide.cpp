@@ -1,4 +1,4 @@
-#include "Guide.h"
+ï»¿#include "Guide.h"
 
 Guide::Guide(string n) {
     name = n;
@@ -10,7 +10,7 @@ void Guide::goToRoom(Room* room) {
 
     currentRoom->visit();
 
-    cout << "Ãèä ïðîâ¸ë ãðóïïó â êîìíàòó: "
+    cout << "Ð“Ð¸Ð´ Ð¿Ñ€Ð¾Ð²Ñ‘Ð» Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ Ð² ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñƒ: "
         << currentRoom->getName()
         << endl;
 }
@@ -19,13 +19,13 @@ void Guide::printCurrentRoomInfo() {
 
     if (currentRoom == nullptr) {
 
-        cout << "Ãðóïïà ïîêà íå íàõîäèòñÿ "
-            << "íè â îäíîé êîìíàòå."
+        cout << "Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ð¿Ð¾ÐºÐ° Ð½Ðµ Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚ÑÑ "
+            << "Ð½Ð¸ Ð² Ð¾Ð´Ð½Ð¾Ð¹ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ðµ."
             << endl;
     }
     else {
 
-        cout << "Òåêóùàÿ êîìíàòà:" << endl;
+        cout << "Ð¢ÐµÐºÑƒÑ‰Ð°Ñ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ð°:" << endl;
 
         currentRoom->printInfo();
     }

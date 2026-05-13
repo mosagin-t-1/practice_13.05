@@ -1,4 +1,4 @@
-#include "Room.h"
+ï»¿#include "Room.h"
 
 Room::Room(string n, string t, int c) {
     name = n;
@@ -8,10 +8,10 @@ Room::Room(string n, string t, int c) {
 }
 
 void Room::printInfo() {
-    cout << "Íàçâàíèå: " << name << endl;
-    cout << "Òèï: " << type << endl;
-    cout << "Âìåñòèìîñòü: " << capacity << endl;
-    cout << "Êîëè÷åñòâî ïîñåùåíèé: "
+    cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ: " << name << endl;
+    cout << "Ð¢Ð¸Ð¿: " << type << endl;
+    cout << "Ð’Ð¼ÐµÑÑ‚Ð¸Ð¼Ð¾ÑÑ‚ÑŒ: " << capacity << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾ÑÐµÑ‰ÐµÐ½Ð¸Ð¹: "
         << visitCount << endl;
 }
 
